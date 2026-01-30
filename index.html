@@ -6,6 +6,7 @@
 <title>full-stack</title>
 
 <style>
+/* ================== RESET ================== */
 *{
   margin:0;
   padding:0;
@@ -13,12 +14,13 @@
   font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
 
+/* ================== BODY ================== */
 body{
   background:#0d1117;
   color:#c9d1d9;
 }
 
-/* ===== TOP BAR ===== */
+/* ================== TOP HEADER ================== */
 .topbar{
   background:#010409;
   padding:14px 22px;
@@ -42,13 +44,14 @@ body{
   color:#8b949e;
 }
 
-/* ===== MAIN AREA ===== */
+/* ================== MAIN ================== */
 .wrapper{
   max-width:1100px;
   margin:30px auto;
   padding:0 20px;
 }
 
+/* ================== TOOLBAR ================== */
 .toolbar{
   display:flex;
   justify-content:space-between;
@@ -59,21 +62,22 @@ body{
 .branch{
   background:#161b22;
   border:1px solid #30363d;
-  padding:6px 10px;
+  padding:6px 12px;
   border-radius:6px;
   font-size:13px;
 }
 
-.btn{
+.code-btn{
   background:#238636;
-  color:white;
+  color:#fff;
   border:none;
   padding:7px 14px;
   border-radius:6px;
   font-weight:600;
+  cursor:pointer;
 }
 
-/* ===== FILE LIST ===== */
+/* ================== FILE LIST ================== */
 .file-box{
   background:#161b22;
   border:1px solid #30363d;
@@ -106,7 +110,7 @@ body{
   font-size:13px;
 }
 
-/* ===== README ===== */
+/* ================== README ================== */
 .readme{
   margin-top:30px;
   background:#161b22;
@@ -120,7 +124,7 @@ body{
   color:#f0f6fc;
 }
 
-/* ===== LINKS ===== */
+/* ================== LINKS ================== */
 a{
   color:#58a6ff;
   text-decoration:none;
@@ -134,41 +138,41 @@ a:hover{
 
 <body>
 
-<!-- TOP BAR -->
+<!-- ===== HEADER ===== -->
 <div class="topbar">
   <span class="repo-name">rvsharma0430-cpu / full-stack</span>
   <span class="badge">Public</span>
 </div>
 
-<!-- CONTENT -->
+<!-- ===== CONTENT ===== -->
 <div class="wrapper">
 
   <!-- TOOLBAR -->
   <div class="toolbar">
     <div class="branch">main ▼</div>
-    <button class="btn">Code</button>
+    <button class="code-btn">Code</button>
   </div>
 
   <!-- FILE LIST -->
   <div class="file-box">
 
     <div class="file-row">
-      <span class="folder">📁 Assignment-1</span>
+      <span class="folder">📁 <a href="Assignment-1/">Assignment-1</a></span>
       <span class="commit">added experiment 1 and 2</span>
     </div>
 
     <div class="file-row">
-      <span class="folder">📁 Assignment-2</span>
+      <span class="folder">📁 <a href="Assignment-2/">Assignment-2</a></span>
       <span class="commit">added experiment 1 and 2</span>
     </div>
 
     <div class="file-row">
-      <span class="folder">📁 Exp-1</span>
+      <span class="folder">📁 <a href="Exp-1/">Exp-1</a></span>
       <span class="commit">added experiment 1 and 2</span>
     </div>
 
     <div class="file-row">
-      <span class="folder">📁 Experiment-2</span>
+      <span class="folder">📁 <a href="Experiment-2/">Experiment-2</a></span>
       <span class="commit">added experiment 1 and 2</span>
     </div>
 
