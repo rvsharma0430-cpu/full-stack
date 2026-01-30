@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>full-stack</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+body{
+  background:#0d1117;
+  color:#c9d1d9;
+}
+
+/* ===== TOP BAR ===== */
+.topbar{
+  background:#010409;
+  padding:14px 22px;
+  border-bottom:1px solid #30363d;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:15px;
+}
+
+.repo-name{
+  font-weight:600;
+  color:#58a6ff;
+}
+
+.badge{
+  border:1px solid #30363d;
+  border-radius:20px;
+  padding:2px 10px;
+  font-size:12px;
+  color:#8b949e;
+}
+
+/* ===== MAIN AREA ===== */
+.wrapper{
+  max-width:1100px;
+  margin:30px auto;
+  padding:0 20px;
+}
+
+.toolbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.branch{
+  background:#161b22;
+  border:1px solid #30363d;
+  padding:6px 10px;
+  border-radius:6px;
+  font-size:13px;
+}
+
+.btn{
+  background:#238636;
+  color:white;
+  border:none;
+  padding:7px 14px;
+  border-radius:6px;
+  font-weight:600;
+}
+
+/* ===== FILE LIST ===== */
+.file-box{
+  background:#161b22;
+  border:1px solid #30363d;
+  border-radius:6px;
+  overflow:hidden;
+}
+
+.file-row{
+  display:flex;
+  justify-content:space-between;
+  padding:12px 16px;
+  border-bottom:1px solid #30363d;
+}
+
+.file-row:last-child{
+  border-bottom:none;
+}
+
+.file-row:hover{
+  background:#0d1117;
+}
+
+.folder{
+  color:#58a6ff;
+  font-weight:500;
+}
+
+.commit{
+  color:#8b949e;
+  font-size:13px;
+}
+
+/* ===== README ===== */
+.readme{
+  margin-top:30px;
+  background:#161b22;
+  border:1px solid #30363d;
+  border-radius:6px;
+  padding:25px;
+}
+
+.readme h2{
+  margin-bottom:10px;
+  color:#f0f6fc;
+}
+
+/* ===== LINKS ===== */
+a{
+  color:#58a6ff;
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span class="repo-name">rvsharma0430-cpu / full-stack</span>
+  <span class="badge">Public</span>
+</div>
+
+<!-- CONTENT -->
+<div class="wrapper">
+
+  <!-- TOOLBAR -->
+  <div class="toolbar">
+    <div class="branch">main ▼</div>
+    <button class="btn">Code</button>
+  </div>
+
+  <!-- FILE LIST -->
+  <div class="file-box">
+
+    <div class="file-row">
+      <span class="folder">📁 Assignment-1</span>
+      <span class="commit">added experiment 1 and 2</span>
+    </div>
+
+    <div class="file-row">
+      <span class="folder">📁 Assignment-2</span>
+      <span class="commit">added experiment 1 and 2</span>
+    </div>
+
+    <div class="file-row">
+      <span class="folder">📁 Exp-1</span>
+      <span class="commit">added experiment 1 and 2</span>
+    </div>
+
+    <div class="file-row">
+      <span class="folder">📁 Experiment-2</span>
+      <span class="commit">added experiment 1 and 2</span>
+    </div>
+
+  </div>
+
+  <!-- README -->
+  <div class="readme">
+    <h2>README</h2>
+    <p>This is my GitHub Pages project hub.</p>
+
+    <p>
+      👉 <a href="Assignment-1/">Assignment 1</a><br>
+      👉 <a href="Assignment-2/">Assignment 2</a><br>
+      👉 <a href="Exp-1/">Experiment 1</a><br>
+      👉 <a href="Experiment-2/">Experiment 2</a>
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>
