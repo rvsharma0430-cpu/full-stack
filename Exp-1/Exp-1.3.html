@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+
+<style>
+:root {
+  --bg: #0b1220;
+  --card: #121a2b;
+  --text: #e5e7eb;
+  --border: rgba(255,255,255,0.08);
+}
+.light {
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --text: #111827;
+  --border: rgba(0,0,0,0.1);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 20px;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.sidebar {
+  height: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+button {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>Admin Dashboard</h1>
+      <button id="themeToggle">☀ Light Mode</button>
+    </header>
+
+    <aside class="card sidebar">
+      <h3>Navigation</h3>
+    </aside>
+
+    <section class="main">
+      <div class="card">Analytics</div>
+      <div class="card">Users</div>
+      <div class="card">Settings</div>
+    </section>
+  </div>
+
+<script>
+const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+
+  toggle.textContent =
+    document.body.classList.contains("light")
+      ? "🌙 Dark Mode"
+      : "☀ Light Mode";
+});
+</script>
+</body>
+</html>

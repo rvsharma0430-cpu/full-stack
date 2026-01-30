@@ -1,0 +1,51 @@
+.form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  outline: none;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #334155;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background: #1e293b;
+}
+
+tbody tr:nth-child(odd) {
+  background: #0b1220;
+}
+
+.deleteBtn {
+  background: #fb7185;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
